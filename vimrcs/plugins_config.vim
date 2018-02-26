@@ -165,6 +165,10 @@ func! SyntasticCheckCoffeescript()
 endfunc
 nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
+" C++ 14 options
+let g:syntastic_cpp_compiler = "g++"
+let g:syntastic_cpp_compiler_options = "-std=c++14"
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
